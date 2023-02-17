@@ -8,8 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bdot,bpi,bequal,bplus,bmin, bmul,bdiv,
-            binv,bsqrt,bsquare,bfact,bln,blog,btan,bcos,bsin,bb1,bb2,bc,bac;
+    Button b1,b2,b3,b4,b5,b6,b7,b8,b9,b0,bdot,bpi,bequal,bplus,bmin,bmul,bdiv,binv,bsqrt,bsquare,bfact,bln,blog,btan,bcos,bsin,bb1,bb2,bc,bac;
     TextView tvmain,tvsec;
     String pi = "3.14159265";
 
@@ -51,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
         tvmain = findViewById(R.id.tvmain);
         tvsec = findViewById(R.id.tvsec);
-
 
         //onclick listeners
         b1.setOnClickListener(new View.OnClickListener() {
@@ -256,10 +254,6 @@ public class MainActivity extends AppCompatActivity {
     //factorial function
     int factorial(int n)
     {
-
-
-
-
         return (n==1 || n==0) ? 1 : n*factorial(n-1);
     }
 
